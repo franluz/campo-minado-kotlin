@@ -10,25 +10,24 @@ class MouseCliqueListener(    private val campo:Campo,
 
     override fun mousePressed(e: MouseEvent?) {
         when(e?.button){
-            MouseEvent.BUTTON1 -> onBotaoEsquerdo
-            MouseEvent.BUTTON2 -> onBotaoDireiro
+            MouseEvent.BUTTON1 -> onBotaoEsquerdo(campo)
+            MouseEvent.BUTTON2 -> onBotaoDireiro(campo)
         }
     }
 
     override fun mouseClicked(e: MouseEvent?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun mouseEntered(e: MouseEvent?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun mouseExited(e: MouseEvent?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun mouseReleased(e: MouseEvent?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 }
 

@@ -3,9 +3,11 @@ package visao
 import modelo.Tabuleiro
 import modelo.TabuleiroEvento
 import javax.swing.JFrame
+import javax.swing.JOptionPane
 import javax.swing.SwingUtilities
 
 fun main() {
+    TelaPrincipal()
 
 }
 class TelaPrincipal:JFrame(){
@@ -15,7 +17,7 @@ class TelaPrincipal:JFrame(){
         tabuleiro.onEvento { this:: mostrarResultado }
         add(painelTabuleiro)
         setSize(690,438)
-        setLocation(null)
+       // setLocation(null)
         defaultCloseOperation= EXIT_ON_CLOSE
         title= "Campo Minado"
         isVisible= true
@@ -26,6 +28,11 @@ class TelaPrincipal:JFrame(){
                 TabuleiroEvento.VITORIA-> " Você ganhou"
                 TabuleiroEvento.DERROTA -> " Você perdeu"
             }
+            JOptionPane.showMessageDialog(this,msg)
+            tabuleiro.reiniciar()
+            painelTabuleiro.repaint()
+            painelTabuleiro.validate()
         }
+
     }
 }
