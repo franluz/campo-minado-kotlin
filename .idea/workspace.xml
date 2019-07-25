@@ -60,13 +60,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/visao/PainelTabuleiro.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="e#15#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/visao/TelaPrincipal.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+              <folding>
+                <element signature="e#15#128#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/visao/MouseCliqueListener.kt" />
         <option value="$PROJECT_DIR$/src/visao/BotaoCampo.kt" />
         <option value="$PROJECT_DIR$/src/visao/PainelTabuleiro.kt" />
+        <option value="$PROJECT_DIR$/src/visao/TelaPrincipal.kt" />
       </list>
     </option>
   </component>
@@ -247,6 +260,16 @@
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="e#15#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visao/TelaPrincipal.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding>
+            <element signature="e#15#128#0" expanded="true" />
           </folding>
         </state>
       </provider>
