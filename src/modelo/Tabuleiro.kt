@@ -50,7 +50,26 @@ class Tabuleiro(val qtdLinhas:Int, val qntColunas:Int, private val qtdMinas:Int)
             }
         }
     }
+    private fun objetivoAlcancado():Boolean{
+        var jogadorGanhou = true
+        forEachCampos { if(!it.objetivoAlcancado) jogadorGanhou=false  }
+        return jogadorGanhou
+    }
+    private fun verificarDerrotaOuVitoria(campo:Campo, campoEvento:CampoEvento){
+        if(campoEvento == CampoEvento.EXPLOSAO){
+            callbacks.forEach{it(TabuleiroEvento.DERROTA)}
+        }else if(objetivoAlcancado()){
+            callbacks.forEach{it(TabuleiroEvento.VITORIA)}
+        }
+    }
     fun forEachCampos(callback: (Campo)->Unit){
         campos.forEach{linha -> linha.forEach(callback)}
+    }
+    fun onEvento(callback: (TabuleiroEvento) -> Unit){
+        callbacks.add (callback)
+    }
+    fun reiniciar(){
+        forEachCampos { it.reiniciar() }
+        sortearMinas()
     }
 }
