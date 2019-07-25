@@ -24,13 +24,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modelo/Tabuleiro.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
+            <state relative-caret-position="1224">
               <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
               <folding>
                 <element signature="e#16#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/visao/MouseCliqueListener.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="107" />
+              <folding>
+                <element signature="e#15#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,6 +70,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/modelo/Campo.kt" />
         <option value="$PROJECT_DIR$/src/modelo/Tabuleiro.kt" />
+        <option value="$PROJECT_DIR$/src/visao/MouseCliqueListener.kt" />
       </list>
     </option>
   </component>
@@ -92,6 +105,12 @@
               <item name="CampoMinado" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="modelo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampoMinado" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampoMinado" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="visao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,10 +187,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modelo/Tabuleiro.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
+        <state relative-caret-position="1224">
           <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
           <folding>
             <element signature="e#16#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visao/MouseCliqueListener.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="107" />
+          <folding>
+            <element signature="e#15#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
