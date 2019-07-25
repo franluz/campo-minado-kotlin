@@ -3,7 +3,7 @@ package modelo
 import kotlin.random.Random
 import java.util.*
 
-enum class TabuleiroEvento(VITORIA,DERROTA)
+enum class TabuleiroEvento{VITORIA,DERROTA}
 class Tabuleiro(val qtdLinhas:Int, val qntColunas:Int, private val qtdMinas:Int){
     private val campos = ArrayList<ArrayList<Campo>>()
     private val callbacks = ArrayList<(TabuleiroEvento)->Unit>()
@@ -13,7 +13,7 @@ class Tabuleiro(val qtdLinhas:Int, val qntColunas:Int, private val qtdMinas:Int)
         sortearMinas()
     }
     private fun gerarCampos(){
-        for(linha in 0 util qtdLinhas){
+        for(linha in 0 until qtdLinhas){
             campos.add(ArrayList())
             for(coluna in 0 until qntColunas){
                 val campoNovo = Campo(linha,coluna)
@@ -40,6 +40,15 @@ class Tabuleiro(val qtdLinhas:Int, val qntColunas:Int, private val qtdMinas:Int)
         var linhaSorteada=-1
         var colunaSorteada=-1
         var qntMinasAtual=0
+        while(qntMinasAtual<qtdMinas){
+            linhaSorteada = gerador.nextInt(qtdLinhas)
+            colunaSorteada = gerador.nextInt(qntColunas)
+            val campoSorteado = campos[linhaSorteada][colunaSorteada]
+            if(campoSorteado.seguro){
+                campoSorteado.minar()
+                qntMinasAtual++
+            }
+        }
     }
     fun forEachCampos(callback: (Campo)->Unit){
         campos.forEach{linha -> linha.forEach(callback)}
