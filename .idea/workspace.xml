@@ -15,11 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modelo/Campo.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+            <state relative-caret-position="365">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modelo/Tabuleiro.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -45,6 +54,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/modelo/Campo.kt" />
+        <option value="$PROJECT_DIR$/src/modelo/Tabuleiro.kt" />
       </list>
     </option>
   </component>
@@ -68,6 +78,17 @@
             <path>
               <item name="CampoMinado" type="b2602c69:ProjectViewProjectNode" />
               <item name="CampoMinado" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampoMinado" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampoMinado" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampoMinado" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampoMinado" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modelo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,8 +158,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/modelo/Campo.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+        <state relative-caret-position="365">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/Tabuleiro.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
         </state>
       </provider>
     </entry>
