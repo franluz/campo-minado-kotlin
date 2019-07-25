@@ -1,6 +1,7 @@
 package modelo
 
-import kotlin.reflect.jvm.internal.impl.types.checker.TypeCheckingProcedureCallbacks
+import kotlin.random.Random
+import java.util.*
 
 enum class TabuleiroEvento(VITORIA,DERROTA)
 class Tabuleiro(val qtdLinhas:Int, val qntColunas:Int, private val qtdMinas:Int){
@@ -35,7 +36,10 @@ class Tabuleiro(val qtdLinhas:Int, val qntColunas:Int, private val qtdMinas:Int)
         }
     }
     private fun sortearMinas(){
-
+        val gerador = java.util.Random()
+        var linhaSorteada=-1
+        var colunaSorteada=-1
+        var qntMinasAtual=0
     }
     fun forEachCampos(callback: (Campo)->Unit){
         campos.forEach{linha -> linha.forEach(callback)}
