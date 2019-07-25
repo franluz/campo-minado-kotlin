@@ -27,6 +27,12 @@ class Tabuleiro(val qtdLinhas:Int, val qntColunas:Int, private val qtdMinas:Int)
         var (linha,coluna) = campo
         val linhas = arrayListOf(linha-1,linha,linha+1)
         val colunas = arrayListOf(coluna-1,coluna, coluna+1)
+        linhas.forEach{l->
+            colunas.forEach{c->
+                val atual = campos.getOrNull(l)?.getOrNull(c)
+                atual?.takeIf { campo!=it }?.let { campo.addVizinho(it) }
+            }
+        }
     }
     private fun sortearMinas(){
 
